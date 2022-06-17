@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PaymentController">
+   <children>
+      <ImageView fitHeight="617.0" fitWidth="841.0" layoutX="1.0" layoutY="1.0">
+         <image>
+            <Image url="@pencil-and-student-backgrounds-powerpoint.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bcbcbc" height="650.0" stroke="BLACK" strokeType="INSIDE" width="849.0" />
+      <TableView fx:id="paymentstable" layoutX="13.0" layoutY="58.0" prefHeight="530.0" prefWidth="819.0" style="-fx-alignment: CENTER;">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" style="-fx-alignment: CENTER;" text="ID" />
+          <TableColumn fx:id="FirstName" prefWidth="86.0" style="-fx-alignment: CENTER;" text=" First Name" />
+            <TableColumn fx:id="LastName" prefWidth="82.0" style="-fx-alignment: CENTER;" text="LastName" />
+            <TableColumn fx:id="Date" prefWidth="117.0" style="-fx-alignment: CENTER;" text="Date" />
+            <TableColumn fx:id="Material" prefWidth="65.0" style="-fx-alignment: CENTER;" text="Material" />
+            <TableColumn fx:id="Teacher" prefWidth="75.0" style="-fx-alignment: CENTER;" text="Teacher" />
+            <TableColumn fx:id="Hours" prefWidth="48.0" style="-fx-alignment: CENTER;" text="Hours" />
+            <TableColumn fx:id="Minutes" prefWidth="68.0" style="-fx-alignment: CENTER;" text="Minutes" />
+            <TableColumn fx:id="Price" minWidth="0.0" prefWidth="55.0" style="-fx-alignment: CENTER;" text="Price" />
+            <TableColumn fx:id="Pay" prefWidth="44.0" style="-fx-alignment: CENTER;" text="Pay" />
+            <TableColumn fx:id="Type" maxWidth="47.0" prefWidth="44.0" style="-fx-alignment: CENTER;" text="Type" />
+            <TableColumn fx:id="Final" prefWidth="57.0" style="-fx-alignment: CENTER;" text="Final" />
+        </columns>
+      </TableView>
+      <Button fx:id="BackBtn" layoutX="13.0" layoutY="598.0" mnemonicParsing="false" onAction="#BackToHome" prefHeight="40.0" prefWidth="79.0" style="-fx-background-color: #1f2e35;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="750.0" layoutY="598.0" mnemonicParsing="false" onAction="#DeletePayment" prefHeight="40.0" prefWidth="79.0" style="-fx-background-color: #1f2e35;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#MoveToLogin" prefHeight="15.0" prefWidth="97.0" style="-fx-background-color: #1f2e35;" text="Sign-Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Search" alignment="CENTER" layoutX="379.0" layoutY="23.0" prefHeight="25.0" prefWidth="97.0" promptText="Search by ID" />
+      <ChoiceBox fx:id="Sort" layoutX="527.0" layoutY="23.0" prefWidth="150.0" />
+      <Button layoutX="731.0" layoutY="21.0" mnemonicParsing="false" onAction="#Search" prefHeight="15.0" prefWidth="97.0" style="-fx-background-color: #1f2e35;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="AllPrice" alignment="CENTER" contentDisplay="CENTER" layoutX="233.0" layoutY="593.0" prefHeight="48.0" prefWidth="377.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TeacherSearch" alignment="CENTER" layoutX="202.0" layoutY="23.0" prefHeight="25.0" prefWidth="97.0" promptText="Teacher" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SizeOfMazeController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="868.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pencil-and-student-backgrounds-powerpoint.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="242.0" layoutX="348.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LIMITLESS.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="ID" alignment="CENTER" layoutX="173.0" layoutY="176.0" prefHeight="47.0" prefWidth="181.0" promptText="ID" />
+      <ChoiceBox fx:id="Materials" layoutX="372.0" layoutY="176.0" prefHeight="47.0" prefWidth="181.0" />
+      <Button fx:id="Savebtn" layoutX="569.0" layoutY="523.0" mnemonicParsing="false" onAction="#SavePrice" prefHeight="47.0" prefWidth="85.0" style="-fx-background-color: #1f2e35;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="BackBtn" layoutX="264.0" layoutY="523.0" mnemonicParsing="false" onAction="#BackToHome" prefHeight="47.0" prefWidth="85.0" style="-fx-background-color: #1f2e35;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Pay" alignment="CENTER" layoutX="372.0" layoutY="475.0" prefHeight="47.0" prefWidth="181.0" promptText="Pay" />	
+      <Button fx:id="Calculatebtn" layoutX="569.0" layoutY="377.0" mnemonicParsing="false" onAction="#Calculate" prefHeight="47.0" prefWidth="85.0" style="-fx-background-color: #1f2e35;" text="Calculate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="268.0" layoutY="353.0" prefHeight="25.0" prefWidth="78.0" text="Hours">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="403.0" layoutY="353.0" prefHeight="25.0" prefWidth="78.0" text="Minutes">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="FinalPrice" alignment="CENTER" contentDisplay="CENTER" layoutX="372.0" layoutY="429.0" prefHeight="38.0" prefWidth="181.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <TextField fx:id="FirstName" alignment="CENTER" layoutX="268.0" layoutY="236.0" prefHeight="47.0" prefWidth="181.0" promptText="First Name" />
+      <TextField fx:id="LastName" alignment="CENTER" layoutX="478.0" layoutY="236.0" prefHeight="47.0" prefWidth="181.0" promptText="Last Name" />
+      <TextField fx:id="Teacher" alignment="CENTER" layoutX="268.0" layoutY="291.0" prefHeight="47.0" prefWidth="181.0" promptText="Teacher" />
+      <ChoiceBox fx:id="Type" layoutX="478.0" layoutY="291.0" prefHeight="47.0" prefWidth="181.0" />
+      <TextField fx:id="Hours" alignment="CENTER" layoutX="271.0" layoutY="382.0" prefHeight="38.0" prefWidth="72.0" promptText="Hours" />
+      <TextField fx:id="Minutes" alignment="CENTER" layoutX="406.0" layoutY="382.0" prefHeight="38.0" prefWidth="72.0" promptText="Minutes" />
+      <DatePicker fx:id="date" layoutX="568.0" layoutY="181.0" prefHeight="38.0" prefWidth="181.0" />
+   </children>
+</AnchorPane>
